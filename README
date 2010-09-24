@@ -1,0 +1,8 @@
+This is a patch for rockbox which replaces usb functionality with that of psgroove.
+
+Currently it is only functional on PP502x targets, and has only been tested on a
+5th generation ipod video.
+
+Additionally, the descriptors/payload is the vanilla psgroove data at the moment.
+I hope to eventually port Aaron's changes to build descriptors at compile time...
+or someone else can do this change and commit it :)
