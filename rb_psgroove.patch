@@ -68,14 +68,14 @@ Index: firmware/SOURCES
 ===================================================================
 --- firmware/SOURCES	(revision 28155)
 +++ firmware/SOURCES	(working copy)
-@@ -371,6 +371,7 @@
- drivers/m66591.c
- #elif CONFIG_USBOTG == USBOTG_ARC
- target/arm/usb-drv-arc.c
+@@ -354,6 +354,7 @@
+ /* USB Stack */
+ #if !defined(SIMULATOR)
+ #ifdef HAVE_USBSTACK
 +usbstack/psgroove.c
- #elif CONFIG_USBOTG == USBOTG_AS3525
- target/arm/as3525/usb-drv-as3525.c
- #elif CONFIG_USBOTG == USBOTG_AS3525v2
+ usbstack/usb_core.c
+ #ifdef USB_ENABLE_STORAGE
+ usbstack/usb_storage.c
 Index: firmware/target/arm/usb-drv-arc.c
 ===================================================================
 --- firmware/target/arm/usb-drv-arc.c	(revision 28155)
